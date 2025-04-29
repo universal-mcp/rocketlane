@@ -48,6 +48,9 @@ class RocketlaneApp(APIApplication):
         """
         Retrieves the JSON response from the '/home' endpoint of the configured API.
 
+        Args:
+            None: This function takes no arguments
+
         Returns:
             Any: Parsed JSON data returned by the '/home' endpoint.
 
