@@ -11,8 +11,7 @@ class RocketlaneApp(APIApplication):
 
     def _get_headers(self) -> dict[str, Any]:
         if self.base_url is None:
-            subdomain = self.integration.get_credentials().get("subdomain")
-            self.base_url = f"https://{subdomain}.api.rocketlane.com/api/v1"
+            self.base_url = f"https://neuvo.api.rocketlane.com/api/v1"
         api_key = self.integration.get_credentials().get("api_key")
         return {
             "api-key": f"{api_key}",
