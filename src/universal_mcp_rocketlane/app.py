@@ -7,10 +7,12 @@ from universal_mcp.integrations import Integration
 class RocketlaneApp(APIApplication):
     def __init__(self, integration: Integration = None, **kwargs) -> None:
         super().__init__(name="rocketlane", integration=integration, **kwargs)
-        subdomain = self.integration.get_credentials().get("subdomain")
-        self.base_url = f"https://{subdomain}.api.rocketlane.com/api/v1"
+        self.base_url = None
 
     def _get_headers(self) -> dict[str, Any]:
+        if self.base_url is None:
+            subdomain = self.integration.get_credentials().get("subdomain")
+            self.base_url = f"https://{subdomain}.api.rocketlane.com/api/v1"
         api_key = self.integration.get_credentials().get("api_key")
         return {
             "api-key": f"{api_key}",
