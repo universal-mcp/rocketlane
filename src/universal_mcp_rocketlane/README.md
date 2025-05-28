@@ -1,10 +1,10 @@
-# Rocketlane MCP Server
+# RocketlaneApp MCP Server
 
-An MCP Server for the Rocketlane API.
+An MCP Server for the RocketlaneApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Rocketlane API.
+This is automatically generated from OpenAPI schema for the RocketlaneApp API.
 
 
 | Tool | Description |
