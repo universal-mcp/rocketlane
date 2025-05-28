@@ -59,7 +59,7 @@ class RocketlaneApp(APIApplication):
             requests.HTTPError: If the HTTP request to the '/home' endpoint returns an unsuccessful status code.
 
         Tags:
-            get, home, api, request, important
+            get, home, api, request
         """
         url = f"{self.base_url}/home"
         query_params = {}
@@ -106,7 +106,7 @@ class RocketlaneApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to retrieve the project fails (e.g., 4xx or 5xx response).
 
         Tags:
-            get, project, fetch, management, important
+            get, project, fetch, management
         """
         if projectId is None:
             raise ValueError("Missing required parameter 'projectId'")
