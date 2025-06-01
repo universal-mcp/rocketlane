@@ -487,7 +487,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Projects
+            Projects, important
         """
         if projectId is None:
             raise ValueError("Missing required parameter 'projectId'.")
@@ -531,7 +531,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Projects
+            Projects, important
         """
         if projectId is None:
             raise ValueError("Missing required parameter 'projectId'.")
@@ -577,7 +577,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Projects
+            Projects, important
         """
         if projectId is None:
             raise ValueError("Missing required parameter 'projectId'.")
@@ -1800,7 +1800,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Projects
+            Projects, important
         """
         if projectId is None:
             raise ValueError("Missing required parameter 'projectId'.")
@@ -2275,7 +2275,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Fields
+            Fields, important
         """
         request_body_data = None
         request_body_data = {
@@ -2318,7 +2318,7 @@ class RocketlaneApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Users
+            Users, important
         """
         if userId is None:
             raise ValueError("Missing required parameter 'userId'.")
