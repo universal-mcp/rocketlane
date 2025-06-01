@@ -5,7 +5,7 @@ from universal_mcp.integrations import Integration
 
 class RocketlaneApp(APIApplication):
     def __init__(self, integration: Integration = None, **kwargs) -> None:
-        super().__init__(name='rocketlaneapp', integration=integration, **kwargs)
+        super().__init__(name='rocketlane', integration=integration, **kwargs)
         self.base_url = "https://api.rocketlane.com/api"
 
     def _get_headers(self) -> Dict[str, str]:
