@@ -1,6 +1,6 @@
 # Rocketlane Universal MCP Server
 
-This repository contains an implementation of an Rocketlane Universal MCP (Model Context Protocol) server. It provides a standardized interface for interacting with Rocketlane's SEO and backlink analysis tools through a unified API.
+This repository contains an implementation of an Rocketlane Universal MCP (Model Context Protocol) server. It provides a standardized interface for interacting with Rocketlane's tools and services through a unified API.
 
 The server is built using the Universal MCP framework.
 
